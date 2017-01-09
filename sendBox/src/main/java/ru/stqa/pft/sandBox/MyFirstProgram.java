@@ -1,10 +1,10 @@
-package downLevel;
+package ru.stqa.pft.sandBox;
 
 /**
  * Hello world!
  *
  */
-public class App 
+class MyFirstProgram
 {
     public static void main( String[] args )
     {
