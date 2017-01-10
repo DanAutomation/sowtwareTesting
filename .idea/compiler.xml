@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="addressbook-web-tests" />
         <module name="sendBox" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="addressbook-web-tests" target="1.5" />
       <module name="sendBox" target="1.5" />
     </bytecodeTargetLevel>
   </component>
