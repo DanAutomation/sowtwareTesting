@@ -38,10 +38,6 @@ public class GroupCreationTests {
         wd = new ChromeDriver();
  //       wd = new FirefoxDriver();
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-    }
-    
-    @Test
-    public void GroupCreationTests() {
         wd.get("http://localhost/addressbook/group.php");
         wd.findElement(By.id("header")).click();
         wd.findElement(By.name("user")).click();
@@ -51,6 +47,10 @@ public class GroupCreationTests {
         wd.findElement(By.name("pass")).clear();
         wd.findElement(By.name("pass")).sendKeys("secret");
         wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
+    }
+    
+    @Test
+    public void testGroupCreation() {
         wd.findElement(By.linkText("groups")).click();
         wd.findElement(By.name("new")).click();
         wd.findElement(By.name("group_name")).click();
@@ -71,7 +71,7 @@ public class GroupCreationTests {
         wd.close();
     }
     
-    public static boolean isAlertPresent(FirefoxDriver wd) {
+    public static boolean isAlertPresent(ChromeDriver wd) {
         try {
             wd.switchTo().alert();
             return true;
