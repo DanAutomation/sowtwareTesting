@@ -33,8 +33,8 @@ public class GroupCreationTests {
 
     @BeforeMethod
     public void setUp() throws Exception {
-        System.setProperty("webdriver.gecko.driver", "D://projects//softwareTesting//sowtwareTesting//addressbook-web-tests//src//browsers//geckodriver.exe");
-        System.setProperty("webdriver.chrome.driver", "D://projects//softwareTesting//sowtwareTesting//addressbook-web-tests//src//browsers//chromedriver.exe");
+        System.setProperty("webdriver.gecko.driver", "D://softwareTesting//sowtwareTesting//addressbook-web-tests//src//browsers//geckodriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D://softwareTesting//sowtwareTesting//addressbook-web-tests//src//browsers//chromedriver.exe");
         wd = new ChromeDriver();
  //       wd = new FirefoxDriver();
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
